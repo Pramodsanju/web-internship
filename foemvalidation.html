@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xworkz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    
+    <body class=" body" style="border: 2px solid black; margin: 10vh 12vh; padding: 5vh 5vh; ">
+    <div class="container" style="background-color: pink;">
+        
+        <form name="gender">
+            
+            <div class="row">
+                <div class="col-3">
+                    
+                    <b><span>Name of the Applicant</span></b>
+                </div>
+               
+                <div class="col-3"> 
+                <div id="nig"></div>  
+                    <input type="text" placeholder="FIRST NAME" id="fname"  required onblur="formSubmit0()"  >
+                    
+                </div>
+                
+                <div class="col-3">
+                    <div id="tig"></div>
+                    <input type="text" placeholder="MIDDLE NAME" id="mname" required onblur="formSubmit1()">
+                    
+                </div>
+                <div class="col-3">
+                    <div id="dig"></div>
+                    <input type="text" placeholder="LAST NAME" id="lname" required onblur="formSubmit2()">
+                    
+                </div>
+                
+            </div>
+            <br>
+            <div>
+                <div class="row">
+                    <div class="col-3">
+                        <div id="mug"></div>
+                        
+                        
+                        <b> Relation </b> <select id="parent" required onblur="formSubmit3()" style="cursor: pointer;" >
+                            <option value=" " >Select</option>
+                            <option value="">Father</option>
+                            <option value="">Mother</option>
+                            <option value="">Guardian</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="col-3">
+                        <div id="abc"></div>
+                        <input type="text" placeholder="FIRST NAME" id="parentfname" required  onblur="formSubmit4()">
+                        
+                    </div>
+                <div class="col-3">
+                    <div id="def"></div>
+                    <input type="text" placeholder="MIDDLE NAME" id="parentmname" required onblur="formSubmit5()">
+                    
+                </div>
+                <div class="col-3">
+                    <div id="ghi"></div>
+                    <input type="text" placeholder="LAST NAME" id="parentlname" required onblur="formSubmit6()">
+                    
+                </div>
+            </div>
+            
+        </div><br>
+        <div>
+            <div class="row">
+                <div class="col-3">
+                    <b>
+                        <p> Full Name as per Records</p>
+                    </b>
+                    
+                    
+                </div>
+                
+                <div class="col-9">
+                    <div id="jkl"></div>
+                    <input type="text" placeholder="NEW FULL NAME" style="padding-inline-end: 569px  ;" id="fullname" required onblur="formSubmit7()">
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+        <br>
+        <div>
+            <div class="row">
+                <div class="col-6" >
+                    
+                    <b> Gender</b> Male<input type="radio" name="gender" value="Male" required style="cursor: pointer;">
+                    Female<input type="radio" name="gender" value="Female"required style="cursor: pointer;">
+                    Trans gender<input type="radio" name="gender" value="Trans gender" required style="cursor: pointer;">
+                </div>
+                
+                <div class="col-3">
+                    <div id="mno"></div>
+                    <b> Date of Birth </b> <input type="date" placeholder="date" id="dob" required onchange="formSubmit8()" value=" ">
+                </div>
+                <div class="col-3">
+                    <div id="pqr"></div>
+                    <b>Age</b><input type="number" id="year" required onblur="formSubmit9()">Yrs
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <br>
+        <div>
+            <div class="row">
+                <div class="col-6">
+                    <div id="stu"></div>
+                    <b> Place of Birth </b> <input type="text" placeholder="Place of Birth"  id="placeofbirth"  required onblur="formSubmit10()">
+                    
+                </div>
+                <div class="col-6">
+                    <div id="vwx"></div>
+                    <b> Country of Birth </b> <select id="Countryofbirth"  required onblur="formSubmit11()" style="cursor:pointer;">
+                        <option value=" "> select</option>
+                        <option value=""> INDIA</option>
+                        <option value=""> AUSTRALIA</option>
+                        <option value=""> SOUTH AFRICA</option>
+                    </select>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <BR>
+            <div>
+                <div class="row">
+                    <b>Qualification</b>
+                    <div class="col-6">
+                        <div id="aaa"></div>
+                        <select id="qualification" required onblur="formSubmit12()" style="cursor:pointer;">
+                            <option value=" "> Select </option>
+                            <option value=""> B.E</option>
+                            <option value="">B.com</option>
+                            <option value="">B.Sc</option>
+                            <option value="">B.B.A</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div id="bbb"></div>
+                        <b>Blood Group</b>
+                        <select id="bloodgroup" required onblur="formSubmit22()" style="cursor:pointer;">
+                            <option value=" "> Unknown </option>
+                            <option value=""> O +ve</option>
+                            <option value="">B +ve</option>
+                            <option value="">A +ve</option>
+                            <option value="">AB +ve</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="row">
+                    <div class="col-6">
+                        <div id="ccc"></div>
+                        <b> Landline Number</b>
+                        <input type="number" placeholder="EX-04023659856"  id="landlineno" required onblur="formSubmit13()">
+                        
+                    </div>
+                    
+                    <div class="col-6">
+                        <b> E-mail</b>
+                        <input type="email" placeholder="Ex-abc@xyz.com" id="email"  required>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <br>
+            
+            <div>
+                <div class="row">
+                    <div class="col-6">
+                        <div id="ddd"></div>
+                        <b> Applicant Mobile Number</b>
+                        <input type="button" value="+91" id="no1">
+                        <input type="number " placeholder="APPLICANT MOBILE NUMBER" id="applicantno" required onblur="formSubmit14()">
+                        
+                    </div>
+                    
+                    <div class="col-6">
+                        <div id="eee"></div>
+                        <b> Emergency Mobile Number</b>
+                        <input type="button" value="+91" id="no2">
+                        <input type="number " placeholder="ALTERNATE MOBILE NUMBER " id="alternateno" required  onblur="formSubmit15()">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="row">
+                    <div class="col-6">
+                        <div id="fff"></div>
+                        <b>Identification Marks 1.</b>
+                        <input type="text" placeholder="SCAR ON HEAD, MOLE ON RIGHT HAND ,ETO" id="identifymark1" required onblur="formSubmit16()">
+                        
+                    </div>
+                    <div class="col-6">
+                        <div id="ggg"></div>
+                        <b>2.</b>
+                        <input type="text" placeholder="SCAR ON HEAD, MOLE ON RIGHT HAND ,ETO" id="identifymark2" required onblur="formSubmit17()">
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div><br>
+            <div align="center">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button"  id="button" class="btn btn-info" onclick="callSubmit()"> Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+        </form>
+        <script src="./formvalidation.js"></script>
+            
+     </div>
+        
+        
+        
+        
+
+
+</body>
+
+</html>
